@@ -1,0 +1,30 @@
+using System;
+
+namespace registro_previo_de_biblioteca
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String nombre;
+            int edadx;
+            Console.WriteLine("no te preucupes esto no es un virus es un inicio de secion en el cmd");
+            Console.WriteLine("hola usuario necesitas registrarte para poder entrar");
+            Console.WriteLine("primero su nombre:");
+            nombre = Console.ReadLine();
+            Console.WriteLine("ok perfecto usuario:" + nombre);
+            Console.WriteLine("usuario " + nombre + " tendras que poner tu edad para ingresar");
+            edadx = int.Parse(Console.ReadLine());
+
+            if (edadx >= 5) 
+            {
+                Console.WriteLine("usted si puede pasar pudistes ingresar correctamente ya que tienes:" + edadx +  " y no tienes 5 años");
+            }
+            else 
+            {
+                Console.WriteLine("no puedes entrar eres menor de edad ya que tienes la edad inadecuada de : " + edadx );
+            }           
+            Console.ReadKey();
+        }
+    }
+}
